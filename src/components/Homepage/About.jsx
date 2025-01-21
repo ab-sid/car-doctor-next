@@ -3,8 +3,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-5 md:mt-20 mb-12 md:mb-60">
-      <div className="relative">
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-5 md:mt-20 mb-44 md:mb-60">
+      <div className="relative order-2 md:order-1 ">
         <div className="">
           <Image
             className="w-full"
@@ -24,7 +24,7 @@ const About = () => {
           ></Image>
         </div>
       </div>
-      <div className="w-2/3 mx-auto md:mx-10 mt-40 md:mt-0 flex flex-col space-y-6">
+      <div className="order-1 md:order-2 w-2/3 mx-auto md:mx-10 mt-10 mb-10 md:mb-0 md:mt-0 flex flex-col space-y-6">
         <h4 className="text-primary">About Us</h4>
         <h2 className="text-xl font-bold">
           We are qualified & of experience in this field
