@@ -29,7 +29,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 items-center my-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center my-10">
       <div>
         <Image
           src="/assets/images/login/login.svg"
