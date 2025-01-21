@@ -21,14 +21,14 @@ const page = async ({ params }) => {
         </h1>
       </div>
       <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-12 md:col-span-8">
-          <div className="flex flex-col space-y-10">
+        <div className="order-2 md:order-1 col-span-12 md:col-span-8">
+          <div className="flex flex-col space-y-10 w-[90%] md:w-[100%] mx-auto md:mx-0">
             {/* <Image src={img} width={400} height={350} alt="title"></Image> */}
             <img className="w-full" src={img} alt="" />
             <h3 className="text-black font-bold text-3xl">{title}</h3>
             <p>{description}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
+          <div className="w-[90%] md:w-[100%] grid grid-cols-1 md:grid-cols-2 gap-4 my-10 mx-auto md:mx-0">
             {facility.map((item, index) => (
               <div
                 className="border p-6 rounded-t-xl border-t-primary border-t-4"
@@ -41,7 +41,7 @@ const page = async ({ params }) => {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-4 text-center md:text-start mb-7 md:mb-7">
+        <div className="order-1 md:order-2 col-span-12 md:col-span-4 text-center md:text-start mb-7 md:mb-7">
           <div>
             <h2 className="md:text-2xl font-bold mb-5">Price ${price}</h2>
             <Link href={`/checkout/${_id}`}>
