@@ -16,6 +16,7 @@ const About = () => {
         </div>
         <div className="absolute top-2/3 md:top-2/3 right-10 md:right-20 border-8 border-white">
           <Image
+            className="w-[300px] md:w-[400px]"
             src={"/assets/images/about_us/parts.jpg"}
             alt="person"
             width={400}

@@ -16,7 +16,7 @@ const Services = async () => {
           humour, or randomised words which don't look even slightly believable.{" "}
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-20">
+      <div className="w-[90%] md:w-[100%] mx-auto md:mx-0 grid grid-cols-1 lg:grid-cols-3 gap-6 mt-20">
         {data.length > 0 &&
           data.map((service) => (
             <ServiceCard key={service._id} service={service}></ServiceCard>
